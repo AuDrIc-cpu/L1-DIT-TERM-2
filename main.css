@@ -10,7 +10,8 @@ font-size: 200px;
 img { 
 
 
-       margin-right: 200px;
+    float: right;
+  margin-left: 20px; /* adds spacing between image and text */
 
     
 }
