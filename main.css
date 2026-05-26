@@ -1,7 +1,8 @@
-h1{
+h1 {
 
 
 font-size: 200px;
+Text-align: center;
 
 
 
@@ -10,8 +11,10 @@ font-size: 200px;
 img { 
 
 
-    float: right;
-  margin-left: 20px; /* adds spacing between image and text */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 
     
 }
