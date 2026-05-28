@@ -11,10 +11,9 @@ Text-align: center;
 img { 
 
 
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+ position: relative;
+ top: 100px; 
+ left: 100px;
 
     
 }
