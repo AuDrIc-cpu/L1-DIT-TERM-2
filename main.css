@@ -1,4 +1,23 @@
+/* Random positioned images */
+.img1 {
+    position: absolute;
+    top: 50px;
+    right: 300px;
+    width: 100px;
+  }
 
+
+
+
+
+
+
+
+.left-img {
+    float: left;
+    margin-right: 15px;
+    width: 150px;
+  }
 
 
 .logo {
