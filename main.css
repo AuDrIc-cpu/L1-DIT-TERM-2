@@ -45,6 +45,11 @@
     height: 170px;
     object-fit: cover;
 }
+.big-image {
+    width: 45%;             /* image sits on the right */
+    height: auto;
+    border-radius: 6px;
+}
 
 
 
