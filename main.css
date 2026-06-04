@@ -17,6 +17,10 @@
     left: 400px;
     width: 90px;
   }
+  .predator-text {
+    margin-top: 20px;       /* space below the image for text */
+    max-width: 600px;
+}
 
 
 
