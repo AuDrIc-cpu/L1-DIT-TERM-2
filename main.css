@@ -34,3 +34,8 @@ position:absolute
 
 
 }
+.logo {
+    width: 150px;
+    height: 170px;
+    object-fit: cover;
+}
