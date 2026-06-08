@@ -97,6 +97,24 @@ div.flex-container > div {
   width: 100%;
   border-radius: 8px;
 }
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+/* Column container */
+.container {  
+  display: flex;
+  flex-wrap: wrap;
+}
 
 
 
