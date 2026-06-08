@@ -75,11 +75,28 @@ div.flex-container > div {
 }
 
 /* Use media query and show the flex items vertically if screen width is less than 600px */
-@media screen and (max-width:600px) {
+@media screen and (max-width:600px) 
   div.flex-container {
     flex-direction: column;
   }
+/* Image row (horizontal layout) */
+.image-row {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  margin-top: 50px;
+  border-radius: 25px;;
+}
+/* Individual image containers */
+.image-row div {
+  flex: 1;
+}
 
+/* Images */
+.image-row img {
+  width: 100%;
+  border-radius: 8px;
+}
 
 
 
