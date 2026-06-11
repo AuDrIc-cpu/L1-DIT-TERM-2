@@ -1,49 +1,53 @@
-CSS
-/* Image row (horizontal layout) */
-.image-row {
-    display: flex;
-    justify-content: space-around;
-    gap: 50px;
-    margin-top: 50px;
-    border-radius: 25px;;
+* {
+  box-sizing: border-box;
 }
- 
-/* Individual image containers */
-.image-row div {
-    flex: 1;
+
+body {
+  margin: 0;
+  padding: 0;
 }
- 
-/* Images */
-.image-row img {
-    width: 100%;
-    border-radius: 8px;
-}
- 
+
 header {
-    background-color: #f1f1f1;
-    padding: 10px;
-    text-align: center;
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style the topnav */
+ul.topnav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+}
+
+/* Style links in topnav */
+ul.topnav li a {
+  display: block;
+  color: #f1f1f1;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+ul.topnav li a:hover {
+  background-color: #dddddd;
+  color: black;
+}
+
+div.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+div.flex-container > div {
+  margin: 10px;
+}
+
+/* Use media query and show the flex items vertically if screen width is less than 600px */
+@media screen and (max-width:600px) {
+  div.flex-container {
+    flex-direction: column;
   }
-  
-  /* Style the topnav */
-  ul.topnav {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #333333;
-  }
-  
-  /* Style links in topnav */
-  ul.topnav li a {
-    display: block;
-    color: #f1f1f1;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change color on hover */
-  ul.topnav li a:hover {
-    background-color: #dddddd;
-    color: black;
-  }
+}

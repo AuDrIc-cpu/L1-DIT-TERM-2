@@ -60,7 +60,7 @@ padding: 0;
 }
 
 header {
-background-color: #7ac913;
+background-color: #94d343;
 padding: 0.023px;
 text-align: center;
 }
@@ -144,7 +144,7 @@ header {
 /* Main column */
 .main {
   flex: 70%;
-  background-color: white;
+  background-color: rgb(70, 197, 98);
   padding: 20px;
 }
 
