@@ -1,72 +1,87 @@
 /* Random positioned images */
 .img1 {
-    position: absolute;
-    top: 50px;
-    right: 300px;
-    width: 100px;
-  }
-  .img2 {
-    position: absolute;
-    top: 200px;
-    left: 100px;
-    width: 120px;
-  }
-  .img3 {
-    position: absolute;
-    top: 300px;
-    left: 400px;
-    width: 90px;
-  }
-  .predator-section {
-    margin-top: 30px;
+  position: absolute;
+  top: 50px;
+  right: 300px;
+  width: 100px;
 }
- 
+.img2 {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  width: 120px;
+}
+.img3 {
+  position: absolute;
+  top: 300px;
+  left: 400px;
+  width: 90px;
+}
+.predator-section {
+  margin-top: 30px;
+}
+
 .predator-image {
-    display: block;
-    width: 500px;
-    max-width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 6px;
+  display: block;
+  width: 500px;
+  max-width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 6px;
 }
-  .predator-text {
-    margin-top: 20px;       /* space below the image for text */
-    max-width: 600px;
+.predator-text {
+  margin-top: 20px;       /* space below the image for text */
+  max-width: 600px;
 }
 .left-img {
-    float: left;
-    margin-right: 15px;
-    width: 150px;
-  }
+  float: left;
+  margin-right: 15px;
+  width: 150px;
+}
 
 
 .logo {
-    width: 150px;
-    height: 170px;
-    object-fit: cover;
+  width: 150px;
+  height: 170px;
+  object-fit: cover;
 }
 .big-image {
-    width: 45%;             /* image sits on the right */
-    height: auto;
-    border-radius: 6px;
+  width: 45%;             /* image sits on the right */
+  height: auto;
+  border-radius: 6px;
 }
 {
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 0;
+margin: 0;
+padding: 0;
 }
 
 header {
-  background-color: #7ac913;
-  padding: 0.023px;
-  text-align: center;
+background-color: #7ac913;
+padding: 0.023px;
+text-align: center;
 }
 div.flex-container {
+display: flex;
+/* Show the flex items horizontally */
+flex-direction: row;
+}
+
+div.flex-container > div {
+margin: 10px;
+}
+
+/* Change color on hover */
+ul.topnav li a:hover {
+  background-color: #dddddd;
+  color: black;
+}
+
+div.flex-container {
   display: flex;
-  /* Show the flex items horizontally */
   flex-direction: row;
 }
 
@@ -75,18 +90,57 @@ div.flex-container > div {
 }
 
 /* Use media query and show the flex items vertically if screen width is less than 600px */
-@media screen and (max-width:600px) 
+@media screen and (max-width:600px) {
   div.flex-container {
     flex-direction: column;
   }
+}
 /* Image row (horizontal layout) */
-
-
+.image-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    margin-top: 50px;
+    border-radius: 25px;;
+}
+ 
+/* Individual image containers */
+.image-row div {
+    flex: 1;
+}
+ 
 /* Images */
 .image-row img {
-  width: 100%;
-  border-radius: 8px;
+    width: 100%;
+    border-radius: 8px;
 }
+header {
+  padding: 60px;
+  text-align: center;
+  background: #f7fdfc;
+  color: white;
+}
+
+/* Top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+/* Navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
 /* Main column */
 .main {
   flex: 70%;
@@ -96,30 +150,9 @@ div.flex-container > div {
 
 /* Fake image, just for this example */
 .fakeimg {
-  width: 50%;
+  width: 100%;
   padding: 20px;
-  float: right;
 }
-/* Column container */
-.container {  
-  display: flex;
-  flex-wrap: wrap;
-}
-{
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: #f1f1f1;
-  padding: 10px;
-  text-align: center;
-}
-
 /* Style the topnav */
 ul.topnav {
   display: flex;
@@ -142,44 +175,26 @@ ul.topnav li a:hover {
   background-color: #dddddd;
   color: black;
 }
-.hero img {
+.intro-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.intro-text {
+  flex: 1;
+}
+
+.intro-image {
+  flex: 0 0 40%;
+}
+
+.intro-image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   display: block;
 }
-.card {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  overflow: hidden;
-}
 
-.card-img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  display: block;
-  background: #c8d8a0;
-}
-
-.card-img.predator { background: #d0c8a8; }
-.card-img.weeds    { background: #b8d0b0; }
-
-.card-body {
-  padding: 0.85rem 1rem 1.1rem;
-}
-
-.card-body h3 {
-  font-family: Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  color: #1a1a1a;
-}
-
-
-
-
-
-
+ 
+ 
