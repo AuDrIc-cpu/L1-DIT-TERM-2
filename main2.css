@@ -51,3 +51,22 @@ div.flex-container > div {
     flex-direction: column;
   }
 }
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.left,
+.middle,
+.right{
+  width: 30%;
+}
+
+.left img,
+.middle img,
+.right img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
