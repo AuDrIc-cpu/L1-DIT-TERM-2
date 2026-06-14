@@ -195,6 +195,39 @@ ul.topnav li a:hover {
   height: auto;
   display: block;
 }
+header{
+  background: linear-gradient(to right, #3a5f0b, #6b8e23);
+  padding: 20px 50px;
+}
 
+.header-container{
+  display: flex;
+  align-items: center;
+}
+
+.header-container img{
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background-color: white;
+  padding: 10px;
+}
+
+.header-text{
+  margin-left: 25px;
+}
+
+.header-text h1{
+  color: white;
+  font-size: 3em;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.header-text p{
+  color: #e0e0e0;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
  
  
