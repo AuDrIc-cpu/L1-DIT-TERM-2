@@ -180,10 +180,16 @@ ul.topnav li a:hover {
   justify-content: space-between;
   align-items: flex-start;
   gap: 20px;
+
 }
 
 .intro-text {
   flex: 1;
+  font-size: 1.3rem;   /* bigger text */
+  line-height: 1.8;    /* adds spacing so it looks longer */
+  text-align: justify; /* makes it look more like a report */
+  width: 70%;
+  margin: 50px auto;   /* centers the block */
 }
 
 .intro-image {
