@@ -185,11 +185,11 @@ ul.topnav li a:hover {
 
 .intro-text {
   flex: 1;
-  font-size: 1.3rem;   /* bigger text */
-  line-height: 1.8;    /* adds spacing so it looks longer */
-  text-align: justify; /* makes it look more like a report */
+  font-size: 1.3rem;  
+  line-height: 1.8;    
+  text-align: justify; 
   width: 70%;
-  margin: 50px auto;   /* centers the block */
+  margin: 50px auto;   
 }
 
 .intro-image {
