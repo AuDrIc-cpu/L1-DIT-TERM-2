@@ -111,3 +111,27 @@ footer {
   text-align: center;
   background: #105f09;
 }
+.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #4f7c2b; /* choose any color you like */
+}
+
+.topnav li {
+  float: left;
+}
+
+.topnav a {
+  display: block;
+  color: #ffffff;            /* text color */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* optional: highlight active link */
+.topnav a.active {
+  background-color: #395a1f; /* slightly darker green */
+}
